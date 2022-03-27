@@ -43,7 +43,7 @@
                 </div>
                 {{csrf_field()}}
                 <button id="entrar" style="background: #00a859; color: white; width: 150px; margin: auto" type="submit" class="btn btn-lg btn-block "> Entrar </button>
-                <a class="btn btn-link" style="color: #373435" href="{{ route('password.request') }}">
+                <a class="btn btn-link" href="{{ route('password.request') }}">
                     Esqueceu sua senha?
                 </a>
             </form>
