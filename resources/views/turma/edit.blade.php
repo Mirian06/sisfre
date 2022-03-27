@@ -10,7 +10,7 @@
 
 @section('conteudo')
 <div class="col-md-10 col-md-offset-1">
-    <div class="panel panel-default">
+    <div class="panel panel-primary">
         <div class="panel-heading">Editar Turma</div>
         <div class="panel-body">
             <form id="CadTurma" class="form-horizontal editar" role="form" method="POST" action="{{route('turma.update',$turmaEdit->id)}}">

@@ -57,26 +57,26 @@
     	            <ul class="nav navbar-nav">
     	              @if( Auth::user()->acesso == 4)      	              
                           <li class="dropdown">
-        	                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false"> Cadastrar <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false" style="color: #2e6da4"> Cadastrar <span class="caret"></span></a>
         	                <ul class="dropdown-menu" role="menu">
-                            <li><a href="{{route('curso.create')}}"> Curso </a></li>
-        	                  <li><a href="{{route('disciplina.create')}}"> Disciplina </a></li>
-                            <li><a href="{{route('feriado.create')}}"> Feriado </a></li>
-                            <li><a href="{{route('sabado.create')}}"> Sábado Letivo </a></li>
-        	                  <li><a href="{{route('semestre.create')}}"> Semestre </a></li>
-                            <li><a href="{{route('usuario.create')}}"> Usuário </a></li>
+                            <li><a href="{{route('curso.create')}}" style="color: #2e6da4"> Curso </a></li>
+        	                  <li><a href="{{route('disciplina.create')}}" style="color: #2e6da4"> Disciplina </a></li>
+                            <li><a href="{{route('feriado.create')}}" style="color: #2e6da4"> Feriado </a></li>
+                            <li><a href="{{route('sabado.create')}}" style="color: #2e6da4"> Sábado Letivo </a></li>
+        	                  <li><a href="{{route('semestre.create')}}" style="color: #2e6da4"> Semestre </a></li>
+                            <li><a href="{{route('usuario.create')}}" style="color: #2e6da4"> Usuário </a></li>
         	                </ul>
         	              </li>
 
                           <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false"> Controle <span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle"  data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false" style="color: #2e6da4"> Controle <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                              <li><a href="{{route('curso.show')}}"> Curso </a></li>
-                              <li><a href="{{route('disciplina.show')}}"> Disciplina </a></li>
-                              <li><a href="{{route('feriado.show')}}"> Feriado </a></li>
-                              <li><a href="{{route('sabado.show')}}"> Sábado Letivo </a></li>
-                              <li><a href="{{route('semestre.show')}}"> Semestre </a></li>
-                              <li><a href="{{route('usuario.show')}}"> Usuário </a></li>
+                              <li><a href="{{route('curso.show')}}" style="color: #2e6da4"> Curso </a></li>
+                              <li><a href="{{route('disciplina.show')}}" style="color: #2e6da4"> Disciplina </a></li>
+                              <li><a href="{{route('feriado.show')}}" style="color: #2e6da4"> Feriado </a></li>
+                              <li><a href="{{route('sabado.show')}}" style="color: #2e6da4"> Sábado Letivo </a></li>
+                              <li><a href="{{route('semestre.show')}}" style="color: #2e6da4"> Semestre </a></li>
+                              <li><a href="{{route('usuario.show')}}" style="color: #2e6da4"> Usuário </a></li>
                             </ul>
                           </li>
                       @endif
@@ -84,28 +84,28 @@
                       @if(Auth::user()->acesso == 1)
                           
                           <li class="dropdown">
-                              <a href="{{route('falta.create')}}"> Cadastrar Falta </a></li>
+                              <a href="{{route('falta.create')}}" style="color: #2e6da4"> Cadastrar Falta </a></li>
                           </li>
 
                           <li class="dropdown">
-                              <a href="{{route('falta.show.funcionario')}}"> Controle de Faltas </a></li>
+                              <a href="{{route('falta.show.funcionario')}}" style="color: #2e6da4"> Controle de Faltas </a></li>
                           </li>
 
                           <li class="dropdown">
-                              <a href="{{route('relatorio.index.funcionario')}}"> Relatórios </a></li>
+                              <a href="{{route('relatorio.index.funcionario')}}" style="color: #2e6da4"> Relatórios </a></li>
                           </li>
                       @endif
 
                       @if( Auth::user()->acesso == 3)
                           <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false"> Coordenador <span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false" style="color: #2e6da4"> Coordenador <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                              <li><a href="{{route('anteposicao.show.coordenador')}}"> Anteposições do Curso</a></li>
-                              <li><a href="{{route('falta.show.coordenador')}}"> Faltas do Curso </a></li>
-                              <li><a href="{{route('grafico.index')}}"> Gráficos </a></li>
+                              <li><a href="{{route('anteposicao.show.coordenador')}}" style="color: #2e6da4"> Anteposições do Curso</a></li>
+                              <li><a href="{{route('falta.show.coordenador')}}" style="color: #2e6da4"> Faltas do Curso </a></li>
+                              <li><a href="{{route('grafico.index')}}" style="color: #2e6da4"> Gráficos </a></li>
                               <li><a href="{{route('relatorio.index')}}"> Relatórios </a></li>
-                              <li><a href="{{route('reposicao.show.coordenador')}}"> Reposições do Curso </a></li>
-                              <li><a href="{{route('turma.show')}}"> Turmas do Curso </a></li>
+                              <li><a href="{{route('reposicao.show.coordenador')}}" style="color: #2e6da4"> Reposições do Curso </a></li>
+                              <li><a href="{{route('turma.show')}}" style="color: #2e6da4"> Turmas do Curso </a></li>
                             </ul>
                           </li>
 
@@ -113,12 +113,12 @@
 
                       @if( Auth::user()->acesso == 3 or Auth::user()->acesso == 2)
                           <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false"> Professor <span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false" style="color: #2e6da4"> Professor <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                              <li><a href="{{route('horario.professor')}}"> Meu Horário  </a></li>
-                              <li><a href="{{route('falta.show.professor')}}"> Minhas Faltas </a></li>
-                              <li><a href="{{route('reposicao.show.professor')}}"> Minhas Reposições </a></li>
-                              <li><a href="{{route('anteposicao.show.professor')}}"> Minhas Anteposições </a></li>
+                              <li><a href="{{route('horario.professor')}}" style="color: #2e6da4"> Meu Horário  </a></li>
+                              <li><a href="{{route('falta.show.professor')}}" style="color: #2e6da4"> Minhas Faltas </a></li>
+                              <li><a href="{{route('reposicao.show.professor')}}" style="color: #2e6da4"> Minhas Reposições </a></li>
+                              <li><a href="{{route('anteposicao.show.professor')}}" style="color: #2e6da4"> Minhas Anteposições </a></li>
                             </ul>
                           </li>
                       @endif
@@ -127,9 +127,9 @@
 
                 @if(Auth::check())
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="{{route('usuario.edit', Auth::user()->id) }}"><span class="glyphicon glyphicon-user"></span> {{Auth::user()->username}} </a></li>
+                        <li><a href="{{route('usuario.edit', Auth::user()->id) }}" style="color: #2e6da4"><span class="glyphicon glyphicon-user" style="color: #2e6da4"></span> {{Auth::user()->username}} </a></li>
                         <li>
-                            <a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                            <a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();" style="color: #2e6da4">
                                 <span class="glyphicon glyphicon-log-in"></span> Sair
                             </a>
 

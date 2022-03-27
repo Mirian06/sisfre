@@ -9,7 +9,7 @@
 @section('conteudo')
 <div class="row container-fluid">
     <div class="col-md-12 col-md-offset-0">
-        <div class="panel panel-default">
+        <div class="panel panel-primary">
             <div class="panel-heading">Gráficos</div>
             <div class="panel-body">
                 <div class="row col-md-12 col-md-offset-0">
@@ -61,7 +61,7 @@
                     <div id="table-grafico" class="col-md-8 col-md-offset-2" style="display: none">
                         <a href="#" id="visualizar-graficoFalta" data-url="{{route('grafico.falta')}}" style="text-decoration: none; font-weight: bold;" >
                             <div class="col-md-6">
-                                <div class="panel panel-default" align="center">
+                                <div class="panel panel-primary" align="center">
                                     <div class="panel-heading">VISUALIZAR GRÁFICOS</div>
                                     <div class="panel-body" style="text-align: center;">
                                         <i class="glyphicon glyphicon-eye-open" style = "font-size: 50px"></i>
@@ -72,7 +72,7 @@
                      
                         <a href="#" id="download-graficoFalta" data-url="{{route('grafico.falta',['download' => 'true'])}}" style="text-decoration: none; font-weight: bold;">
                             <div class="col-md-6">
-                                <div class="panel panel-default" align="center">
+                                <div class="panel panel-primary" align="center">
                                     <div class="panel-heading">DOWNLOAD GRÁFICOS</div>
                                     <div class="panel-body" style="text-align: center;">
                                         <i class="glyphicon glyphicon-download" style = "font-size: 50px"></i>

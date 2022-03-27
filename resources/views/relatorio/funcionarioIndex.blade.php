@@ -9,7 +9,7 @@
 @section('conteudo')
 <div class="row container-fluid">
     <div class="col-md-12 col-md-offset-0">
-        <div class="panel panel-default">
+        <div class="panel panel-primary">
             <div class="panel-heading">Relatório</div>
             <div class="panel-body">
                 <div class="row col-md-12 col-md-offset-0">
@@ -92,7 +92,7 @@
                         
                         <a href="#" id="visualizar-professor" data-url="{{route('relatorio.professor')}}" style="text-decoration: none; font-weight: bold;" >
                             <div class="col-md-6">
-                                <div class="panel panel-default" align="center">
+                                <div class="panel panel-primary" align="center">
                                     <div class="panel-heading"> VISUALIZAR RELATÓRIO </div>
                                     <div class="panel-body" style="text-align: center;">
                                         <i class="glyphicon glyphicon-eye-open" style = "font-size: 50px"></i>
@@ -103,7 +103,7 @@
                      
                         <a href="#" id="download-professor" data-url="{{route('relatorio.professor',['download' => 'download'])}}" style="text-decoration: none; font-weight: bold;">
                             <div class="col-md-6">
-                                <div class="panel panel-default" align="center">
+                                <div class="panel panel-primary" align="center">
                                     <div class="panel-heading">DOWNLOAD RELATÓRIO</div>
                                     <div class="panel-body" style="text-align: center;">
                                         <i class="glyphicon glyphicon-download" style = "font-size: 50px"></i>

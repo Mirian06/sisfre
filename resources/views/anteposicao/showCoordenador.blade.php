@@ -10,7 +10,7 @@
 @section('conteudo')
 <div class="row container-fluid">
     <div class="col-md-12 col-md-offset-0">
-        <div class="panel panel-default">
+        <div class="panel panel-primary">
             <div class="panel-heading">Anteposições do Curso</div>
             <div class="panel-body">
                 <div class="row col-md-12 col-md-offset-0">

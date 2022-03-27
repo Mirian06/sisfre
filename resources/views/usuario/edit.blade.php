@@ -8,7 +8,7 @@
 
 @section('conteudo')
             <div class="col-md-10 col-md-offset-1">
-                <div class="panel panel-default">
+                <div class="panel panel-primary">
                     <div class="panel-heading">Atualizar Usuário</div>
                     <div class="panel-body">
                     <form class="form-horizontal editar" role="form" method="POST" action="{{route('usuario.update', $user->id) }}">
