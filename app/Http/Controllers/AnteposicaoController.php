@@ -170,7 +170,7 @@ class AnteposicaoController extends Controller
         $messages = [
             'arquivo.required'       =>'É necessário selecionar um novo arquivo para efetuar a mudança',
             'arquivo.max'            =>'O tamanho máximo do arquivo deve ser 2MB',
-            'arquivo.mimes'          =>'O Arquivo deve está no formato .PDF',
+            'arquivo.mimes'          =>'O Arquivo deve está no formato .PDF ou imagens (png,jpg)',
             'qtd.required'           =>'A quantidade de falta é obrigatória',
             'qtd.integer'            =>'A quantidade de falta tem que ser um valor númerico',
             'qtd.min'                =>'Selecione a quantidade de faltas',
@@ -187,7 +187,7 @@ class AnteposicaoController extends Controller
         if(empty($req->input('arquivo'))){
             $validador = Validator::make($req->all(),
                 [
-                    'arquivo'                    => 'required|file|mimes:pdf|max:2048',
+                    'arquivo'                    => 'required|file|mimes:pdf,png,jpeg,jpg|max:2048',
                     'qtd'                        => 'required|integer|min:1',
                     'dia'                        => 'required|date',
                     'turma'                      => 'required|integer|min:1',

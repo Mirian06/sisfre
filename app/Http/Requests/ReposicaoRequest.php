@@ -14,7 +14,7 @@ class ReposicaoRequest extends FormRequest
     {
 
         return [
-            'arquivo'                    => 'required|file|mimes:pdf|max:2048',
+            'arquivo'                    => 'required|file|mimes:pdf,jpg,jpeg,png|max:2048',
             'qtd'                        => 'required|integer|min:1',
             'dia'                        => 'required|date|after:falta_dia|before:validade',
         ];
@@ -25,7 +25,7 @@ class ReposicaoRequest extends FormRequest
         return [
             'arquivo.required'       =>'A folha de reposição é obrigatória',
             'arquivo.max'            =>'O tamanho máximo do arquivo deve ser 2MB',
-            'arquivo.mimes'          =>'O Arquivo deve está no formato .PDF',
+            'arquivo.mimes'          =>'O Arquivo deve está no formato .PDF,JPEG,PNG,JPG',
             'qtd.required'           =>'A quantidade de falta é obrigatória',
             'qtd.integer'            =>'A quantidade de falta tem que ser um valor númerico',
             'qtd.min'                =>'Selecione a quantidade de faltas',

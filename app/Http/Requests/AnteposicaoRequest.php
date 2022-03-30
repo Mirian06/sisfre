@@ -14,7 +14,7 @@ class AnteposicaoRequest extends FormRequest
     {
 
         return [
-            'arquivo'                    => 'required|file|mimes:pdf|max:2048',
+            'arquivo'                    => 'required|file|mimes:pdf,png,jpg,jpeg|max:2048',
             'qtd'                        => 'required|integer|min:1',
             'dia'                        => 'required|date',
             'turma'                      => 'required|integer|min:1',
@@ -27,7 +27,7 @@ class AnteposicaoRequest extends FormRequest
         return [
             'arquivo.required'       =>'A folha de reposição é obrigatória',
             'arquivo.max'            =>'O tamanho máximo do arquivo deve ser 2MB',
-            'arquivo.mimes'          =>'O Arquivo deve está no formato .PDF',
+            'arquivo.mimes'          =>'O Arquivo deve está no formato .PDF, pdf ou (png,jpg)',
             'qtd.required'           =>'A quantidade de falta é obrigatória',
             'qtd.integer'            =>'A quantidade de falta tem que ser um valor númerico',
             'qtd.min'                =>'Selecione a quantidade de faltas',
